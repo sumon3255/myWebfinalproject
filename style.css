@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Josefin+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+   
+ 
+
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-list li {
+  padding: 26px 24px;
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'EB Garamond', serif;
+}
+
+.nav-list li a:hover {
+  color: grey;
+}
+
+.rightNav {
+  padding: 0 23px;
+  width: 50%;
+  text-align: right;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 30%;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+#search {
+  padding: 5px;
+  font-size: 15px;
+  border: 2px solid white;
+  border-radius: 9px;
+  outline: none;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7) url("img/bg.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.firstSection {
+  height: 100vh;
+}
+.box-main {
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 75%;
+}
+
+.firstHalf {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf {
+  width: 30%;
+}
+
+.secondHalf img {
+  width: 93%;
+  border: 2px solid white;
+  border-radius: 140px;
+  display: block;
+  margin: auto;
+}
+
+.text-big {
+  font-size: 26px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.one{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 27px;
+}
+.two{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin: 8px 3px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 12px;
+  outline: none;
+  color: white;
+  background: none;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+.section {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 70%;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+  padding:20px;
+}
+
+.thumbnail img {
+  width: 192px;
+  border: 2px solid black;
+  border-radius: 26px;
+  margin-top: 19px;
+  height: 177px;
+}
+
+.paras {
+  padding: 0 10px;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.sectionTag {
+  padding: 20px 0;
+}
+
+.subsectionTab {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact{
+  background-color: #f6f5f4;
+  height: 450px;
+}
+.text-center{
+  padding: 30px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.form{
+  max-width:62%;
+  margin:0 auto;
+}
+
+.form input{
+  padding: 5px 3px;
+  margin:14px 0;
+  width:100%;
+  font-size: 19px;
+  border: 2px solid grey;
+  border-radius: 6px;
+  outline: none;
+  font-family: "Ubuntu", sans-serif;
+
+}
+
+.btn-dark{
+  color:darkslategray;
+  border:2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-footer{
+  
+  padding: 10px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  
+}
+
+.burger{
+  display: none;
+  position: absolute;
+  cursor: pointer; 
+  top: 15px;
+  right: 5%;
+
+}
+.line{
+      width:30px;
+      background-color: white;
+      height:4px;
+      margin:5px 3px;
+}
+
+
+/* for responsive */
+
+
+
+@media only screen and (max-width:940px){
+
+  .nav-list{
+    flex-direction: column;
+  }
+  .navbar{
+  
+   height: 447px;
+   flex-direction: column;
+   transition: all 0.7s ease-out;;
+   }
+ .rightNav{
+   text-align: center;
+ }
+ #search{
+   width:100%;
+ }
+ 
+ .burger{
+   display:block;
+ }
+ .h-nav-resp{
+   height:72px;
+ }
+ .v-class-resp{
+   opacity: 0;
+ }
+ .box-main{
+   flex-direction: column-reverse;
+   /* colmn reverse e pic age asbe */
+   max-width:100%;
+ }
+ 
+ section{
+   flex-direction: column-reverse;
+ }
+ .one{
+   text-align: center;
+ }
+ .two{
+   text-align: center;
+ }
+ .buttons{
+   text-align: center;
+ }
+ .one{
+   text-align: center;
+ }
+ .two{
+   text-align: center;
+ }
+ 
+ .left {
+   flex-direction: column-reverse;
+ }
+ .paras{
+   padding: 0px 0px;
+ }
+ 
+ 
+ }
